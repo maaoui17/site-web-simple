@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Récupération par e-mail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+  <main class="container small">
+    <section class="card single">
+      <h1>Récupération par e-mail</h1>
+      <form id="emailForm">
+        <label for="recoverEmail">Taper votre adresse e-mail</label>
+        <input id="recoverEmail" type="email" placeholder="exemple@domaine.tld" required />
+
+        <div class="row">
+          <button type="button" class="btn btn-secondary" onclick="location.href='forgot.html'">Annuler</button>
+          <button type="submit" class="btn btn-primary">Envoyer le code</button>
+        </div>
+
+        <div id="emailMsg" class="msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

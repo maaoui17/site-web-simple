@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Récupération par téléphone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+  <main class="container small">
+    <section class="card single">
+      <h1>Récupération par téléphone</h1>
+      <form id="phoneForm">
+        <label for="recoverPhone">Taper votre numéro (8 chiffres)</label>
+        <input id="recoverPhone" type="tel" placeholder="01234567" required />
+
+        <div class="row">
+          <button type="button" class="btn btn-secondary" onclick="location.href='forgot.html'">Annuler</button>
+          <button type="submit" class="btn btn-primary">Envoyer le code</button>
+        </div>
+
+        <div id="phoneMsg" class="msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

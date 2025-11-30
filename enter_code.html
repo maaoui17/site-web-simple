@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrer code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+  <main class="container small">
+    <section class="card single">
+      <h1>Entrez le code</h1>
+      <form id="codeForm">
+        <label for="codeInput">Taper le code envoyé (6 chiffres)</label>
+        <input id="codeInput" type="text" inputmode="numeric" maxlength="6" placeholder="123456" required />
+
+        <div class="row">
+          <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">Annuler</button>
+          <button type="submit" class="btn btn-primary">Valider</button>
+        </div>
+
+        <div id="codeMsg" class="msg"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

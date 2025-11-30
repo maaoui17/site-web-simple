@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <main class="container small">
+    <section class="card single">
+      <h1>Inscription</h1>
+      <form id="registerForm">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" required />
+
+        <label for="prenom">Prénom</label>
+        <input id="prenom" name="prenom" type="text" required />
+
+        <label for="dob">Date de naissance</label>
+        <input id="dob" name="dob" type="date" required />
+
+        <label for="regEmail">E-mail</label>
+        <input id="regEmail" name="email" type="email" required />
+
+        <label for="phone">Numéro (8 chiffres)</label>
+        <input id="phone" name="phone" type="tel" placeholder="01234567" required />
+
+        <label for="regPassword">Mot de passe</label>
+        <input id="regPassword" name="password" type="password" required />
+
+        <div class="row">
+          <button type="button" class="btn btn-secondary" id="resetRegister">Annuler</button>
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </div>
+
+        <div id="registerMsg" class="msg"></div>
+        <div class="links"><a href="index.html">Retour Connexion</a></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

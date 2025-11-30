@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connexion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-left">
+        <img src="images/hero.jpg" alt="hero" class="hero-img" />
+      </div>
+
+      <div class="card-right">
+        <h1>Connexion</h1>
+        <form id="loginForm">
+          <label for="loginEmail">E-mail</label>
+          <input id="loginEmail" name="email" type="email" placeholder="exemple@domaine.tld" required />
+
+          <label for="loginPassword">Mot de passe</label>
+          <input id="loginPassword" name="password" type="password" placeholder="Votre mot de passe" required />
+
+          <div class="row">
+            <button type="button" class="btn btn-secondary" id="resetLogin">Annuler</button>
+            <button type="submit" class="btn btn-primary">Connexion</button>
+          </div>
+
+          <div class="links">
+            <a href="register.html">S'inscrire</a>
+            <a href="forgot.html" class="right">Mot de passe oublié ?</a>
+          </div>
+
+          <div id="loginMsg" class="msg"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

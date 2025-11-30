@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Récupération</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <main class="container small">
+    <section class="card single">
+      <h1>Récupération du mot de passe</h1>
+      <form id="forgotForm">
+        <label><input type="radio" name="method" value="phone" checked /> Récupération par numéro de téléphone</label>
+        <label><input type="radio" name="method" value="email" /> Récupération par adresse e-mail</label>
+
+        <div class="row">
+          <button type="button" class="btn btn-secondary" onclick="location.href='index.html'">Annuler</button>
+          <button type="button" class="btn btn-primary" id="forgotNext">Valider</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
